@@ -1,13 +1,9 @@
 package org.example;
 
 public class ContoCorrentePremium extends ContoCorrente {
-    private int identificativo;
-    private double saldo;
-    private Cliente cliente;
     public ContoCorrentePremium(int identificativo, Cliente cliente) {
-        this.identificativo = identificativo;
-        this.cliente = cliente;
-        this.saldo = 0;
+        super(identificativo, cliente);
+        saldo = 0;
     }
     @Override
     public void deposita(int denaro) {
